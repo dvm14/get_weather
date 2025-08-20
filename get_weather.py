@@ -31,9 +31,15 @@ def get_weather(city):
     #5. Extract key info
     city_name = data["name"]
     temp = data["main"]["temp"]
+    humidity = data["main"]["humidity"]
     description = data["weather"][0]["description"]
 
     #6. Print
-    print(f"In {city_name}, it is {temp}C with {description}.")
+    print(f"In {city_name}, it is {temp} degrees celsius with {humidity}% humidity and {description}.")
 
-get_weather("Raleigh")
+def get_city():
+    return input("Enter a city to get its weather: ")
+
+if __name__ == "__main__":
+    city = get_city()
+    get_weather(city)

@@ -1,6 +1,6 @@
-# Weather API app
+# Get Weather app
 
-A simple usage of the Weather API
+A simple usage of the OpenWeather API to get weather for a specific city.
 
 ## Getting Started
 
@@ -11,12 +11,15 @@ A simple usage of the Weather API
 
 ### Installation
 ```bash
-git clone https://github.com/username/my-streamlit-demo.git
-cd my-streamlit-demo
+git clone https://github.com/dvm14/get_weather.git
+cd get_weather
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 
-### Usage
-streamlit run streamlit_app.py
+```
+Create a login with OpenWeather API to create an API Key
+Save this API Key as a variable in an .env file as OPENWEATHER_API_KEY=<API Key>
 
+### Usage
+python get_weather.py
